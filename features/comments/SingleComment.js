@@ -11,7 +11,7 @@ const SingleComment = ({ data }) => {
         <ImageBackgroundCard
           width={"60px"}
           height={"60px"}
-          source={require("../../../assets/images/josh9.jpeg")}
+          source={require("../../assets/images/josh9.jpeg")}
           // resizeMode="cover"
           style={{
             // borderWidth: 5,
