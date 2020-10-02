@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { View, Text, FlatList } from "react-native";
-import Container from "../custom/containers/Container";
-import SingleComment from "../comment/SingleComment";
+import Container from "../common/custom/containers/Container";
+import SingleComment from "./SingleComment";
 
 // move to common/comment and import to post index
 const ShowCommentsIndex = ({ payload }) => {

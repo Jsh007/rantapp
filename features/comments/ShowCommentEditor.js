@@ -1,9 +1,9 @@
 import React, { memo } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import Container from "../custom/containers/Container";
-import ImageBackgroundCard from "../custom/containers/ImageBackgroundCard";
-import RantInput from "../custom/forms/RantInput";
-import RantButton from "../custom/buttons/Button";
+import Container from "../common/custom/containers/Container";
+import ImageBackgroundCard from "../common/custom/containers/ImageBackgroundCard";
+import RantInput from "../common/custom/forms/RantInput";
+import RantButton from "../common/custom/buttons/Button";
 
 const ShowCommentEditor = () => {
   return (

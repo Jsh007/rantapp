@@ -1,9 +1,9 @@
 import React, { memo } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Reactotron from "reactotron-react-native";
-import { Label } from "../../common/custom/text/text";
-import Container from "../custom/containers/Container";
-import ImageBackgroundCard from "../../common/custom/containers/ImageBackgroundCard";
+import { Label } from "../common/custom/text/text";
+import Container from "../common/custom/containers/Container";
+import ImageBackgroundCard from "../common/custom/containers/ImageBackgroundCard";
 const SingleComment = ({ data }) => {
   return (
     <View style={styles.container}>
