@@ -26,4 +26,8 @@ common/settings with the custom Mod action buttons in it.
 
 This slice should listen on the following slices via [extrareducers]; - postsSlice, groupsSlice, statusSlice. There should be asyn/thunk
 action creators that'll take in a usersId (to check if current user is a mod) and groupId ( to retrieve all pending users and posts)
+MAIN ACTIONS:
+1. getPendingModUsers
+2. getPendingModPosts
+3. getPendingModStatus
 */

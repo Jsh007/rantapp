@@ -6,4 +6,7 @@ SOME ACTIONS:
 2. editUserStatus - expects statusId, updateData
 3. addPremiumStaus - 
 4. addAdminStatus -
+
+MAIN ACTION:
+1. getUserStatus - may not be used.
 */

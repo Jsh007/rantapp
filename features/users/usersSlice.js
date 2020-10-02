@@ -32,4 +32,14 @@ Usershsould be able to do the following:
 
 except they are banned, unverified
 Retrieve their profile data and other data they are allowed to view from the ui component using redux-firestore
+Main Actions required:
+1. StalkUser
+2. initChat
+3. LikePost - you may implement this in the postSlice
+4. 
+If RRF doesn't auto synch from firestore into redux, dispatch the following actions in the appropriate components;
+1. getUserProfileData
+2. getUserGalleryData
+3. getUserActivityPosts, getUserActivityComments
+4. getUserSubscriptionHistory {...Active, ...transactions}
 */

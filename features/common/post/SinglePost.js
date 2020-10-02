@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useMemo } from "react";
 import Container from "../custom/containers/Container";
 import ShowPostHeader from "./ShowPostHeader";
 import ShowPostContent from "./ShowPostContent";
@@ -22,35 +22,42 @@ import {
 } from "react-native-responsive-screen";
 
 const SinglePost = ({ data }) => {
-  const statData = {
-    views: {
-      icon: "eye-outline",
-      value: data.viewsCount,
-      postId: data.postId,
-    },
-    shares: {
-      icon: "chat-outline",
-      value: data.sharesCount,
-      postId: data.postId,
-    },
-    comments: {
-      icon: "share-outline",
-      value: data.commentsCount,
-      postId: data.postId,
-    },
-  };
+  // memoize data; arrays, objects and functions defined within the component
+  const statData = useMemo(() => {
+    return {
+      views: {
+        icon: "eye-outline",
+        value: data.viewsCount,
+        postId: data.postId,
+      },
+      shares: {
+        icon: "chat-outline",
+        value: data.sharesCount,
+        postId: data.postId,
+      },
+      comments: {
+        icon: "share-outline",
+        value: data.commentsCount,
+        postId: data.postId,
+      },
+    };
+  }, [statData]);
 
-  const headerData = {
-    auth: {},
-    post: {
-      date: data.createdAt,
-    },
-  };
+  const headerData = useMemo(() => {
+    return {
+      auth: {},
+      post: {
+        date: data.createdAt,
+      },
+    };
+  }, [headerData]);
 
-  const postData = {
-    image: "../../../assets/images/post-img.png",
-    text: data.text,
-  };
+  const postData = useMemo(() => {
+    return {
+      image: "../../../assets/images/post-img.png",
+      text: data.text,
+    };
+  }, []);
   const commentIndexData = {
     postId: data.postId,
   };
